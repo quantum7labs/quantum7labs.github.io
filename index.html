@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum7 Labs - Educational Apps for Kids</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 60px 20px 30px;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 900px;
+            width: 90%;
+            padding: 20px;
+        }
+        
+        .app-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            transition: transform 0.3s ease;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #6C63FF, #FF6584);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            flex-shrink: 0;
+        }
+        
+        .app-icon-2 {
+            background: linear-gradient(135deg, #00c6fb, #005bea);
+        }
+        
+        .app-info h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        .app-info p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .badge-android {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+        
+        .badge-kids {
+            background: #fff3e0;
+            color: #ef6c00;
+        }
+        
+        .badge-free {
+            background: #e3f2fd;
+            color: #1565c0;
+        }
+        
+        .play-button {
+            display: inline-block;
+            padding: 10px 24px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        
+        .play-button:hover {
+            background: #555;
+        }
+        
+        .section-title {
+            color: white;
+            text-align: center;
+            font-size: 1.8em;
+            margin: 30px 0 10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        
+        .about-section {
+            background: rgba(255,255,255,0.15);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px 0;
+            color: white;
+            text-align: center;
+        }
+        
+        .about-section h3 {
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .about-section p {
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+        
+        .contact-section {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px 0 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .contact-section h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .contact-section p {
+            color: #666;
+            margin: 8px 0;
+        }
+        
+        .contact-section a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            .app-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <h1>🚀 Quantum7 Labs</h1>
+        <p>Creating Educational Apps for Children</p>
+    </div>
+    
+    <div class="container">
+        
+        <h2 class="section-title">📱 Our Apps</h2>
+        
+        <!-- App 1: ABC Kids Learning -->
+        <div class="app-card">
+            <div class="app-icon">📚</div>
+            <div class="app-info">
+                <h2>ABC Kids Learning</h2>
+                <p>
+                    A fun and interactive educational app for children aged 2-6. 
+                    Learn Alphabets, Numbers, Animals, Fruits, Shapes, Colors, 
+                    and play exciting Quiz games!
+                </p>
+                <span class="badge badge-android">Android</span>
+                <span class="badge badge-kids">Ages 2-6</span>
+                <span class="badge badge-free">Free</span>
+                <br>
+                <a href="https://play.google.com/store/apps/details?id=com.anuraggulerria.abc_kids" 
+                   class="play-button" target="_blank">
+                    ▶ Get on Google Play
+                </a>
+            </div>
+        </div>
+        
+        <!-- App 2: Color Bounce -->
+        <div class="app-card">
+            <div class="app-icon app-icon-2">🎮</div>
+            <div class="app-info">
+                <h2>Color Bounce: Logic Dash 2D</h2>
+                <p>
+                    An exciting 2D logic game with colorful bouncing mechanics. 
+                    Test your reflexes and solve color-based puzzles in this 
+                    addictive arcade experience!
+                </p>
+                <span class="badge badge-android">Android</span>
+                <span class="badge badge-free">Free</span>
+                <br>
+                <a href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME_HERE" 
+                   class="play-button" target="_blank">
+                    ▶ Get on Google Play
+                </a>
+            </div>
+        </div>
+        
+        <!-- About Section -->
+        <div class="about-section">
+            <h3>About Quantum7 Labs</h3>
+            <p>
+                We are passionate about creating high-quality educational and 
+                entertainment apps for children and families. Our apps are designed 
+                to be safe, fun, and educational, helping kids learn while they play.
+                We believe every child deserves access to quality learning tools.
+            </p>
+        </div>
+        
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h3>📬 Contact Us</h3>
+            <p>📧 Email: <a href="mailto:anuraggulerria@gmail.com">anuraggulerria@gmail.com</a></p>
+            <p>🏢 Developer: Quantum7 Labs</p>
+            <p>📍 India</p>
+        </div>
+        
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 Quantum7 Labs. All rights reserved.</p>
+        <p style="margin-top: 8px;">
+            <a href="privacy-policy.html" style="color: rgba(255,255,255,0.8); 
+               text-decoration: none; margin: 0 10px;">Privacy Policy</a> | 
+            <a href="terms.html" style="color: rgba(255,255,255,0.8); 
+               text-decoration: none; margin: 0 10px;">Terms of Service</a>
+        </p>
+    </div>
+    
+</body>
+</html>
